@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+
+        <div class="password-display">
+            <input type="text" id="passwordOutput" placeholder=" Here Your Password..." readonly>
+            <button id="copyButton" title="Copy to Clipboard">
+                
+                <img src="img/copy-icon.png" alt="Copy" width="20">
+               
+            </button>
+        </div>
+
+        <div class="options">
+            <div class="option">
+                <label for="lengthInput">Password Length:</label>
+                <input type="number" id="lengthInput" value="12" min="4" max="64">
+            </div>
+            <div class="option">
+                <label for="includeUppercase">Include Uppercase (A-Z)</label>
+                <input type="checkbox" id="includeUppercase" checked>
+            </div>
+            <div class="option">
+                <label for="includeLowercase">Include Lowercase (a-z)</label>
+                <input type="checkbox" id="includeLowercase" checked>
+            </div>
+            <div class="option">
+                <label for="includeNumbers">Include Numbers (0-9)</label>
+                <input type="checkbox" id="includeNumbers" checked>
+            </div>
+            <div class="option">
+                <label for="includeSymbols">Include Symbols (!@#$%^&*)</label>
+                <input type="checkbox" id="includeSymbols">
+            </div>
+        </div>
+
+        <button id="generateButton">Generate Password</button>
+
+        <div class="strength-indicator">
+            <p>Strength:</p>
+            <div id="strengthBarContainer">
+                 <div id="strengthBar"></div>
+            </div>
+             <p id="strengthText"></p>
+        </div>
+
+    </div>
+
+   
+    <script src="js/script.js"></script>
+</body>
+</html>
