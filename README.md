@@ -3,9 +3,11 @@
 A simple web application to generate strong, random passwords based on user-defined criteria. This project is built entirely with HTML, CSS, and vanilla JavaScript, making it a great example of front-end development fundamentals.
 
 **Home Page**
+
 ![Password Generator Screenshot](img/password-generator-home.PNG)
 
 **After Password Genarated**
+
 ![Password Generator Screenshot](img/password-generator-result.PNG)
 
 ## Features
@@ -42,9 +44,7 @@ Since this is a purely front-end project, setup is very straightforward:
     cd password-generator
     ```
 
-2.  **No API Keys Needed:** Unlike the Weather App, this project does not require any external API keys.
-
-3.  **Open the Application:**
+2.  **Open the Application:**
     *   Simply open the `index.html` file directly in your web browser (e.g., by double-clicking it).
     *   Alternatively, if you use VS Code with the "Live Server" extension, you can right-click `index.html` and choose "Open with Live Server".
 
